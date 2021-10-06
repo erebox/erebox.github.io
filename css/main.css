@@ -1,6 +1,3 @@
-@font-face { font-family: 'Oxanium'; font-style: normal; font-weight: 400; font-display: swap; src: url(oxanium-ext.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: 'Oxanium'; font-style: normal; font-weight: 400; font-display: swap; src: url(oxanium.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
 body, html { font-size:70% }
 body { font:16px Helvetica,Arial,sans-serif; color:#666; background:#000000 url(../img/bg_code.jpg); background-size:cover }
 h1, h2, h3, h4 { font-family:Helvetica,Arial,sans-serif; color:#222; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility }
@@ -17,7 +14,7 @@ hr { border:none; height:1px; margin:40px auto; background:#eee; width:100% }
 code, tt { padding:1px 0; font-family:courier,monospace; font-size:12px; line-height:20px; background:#fff; border-radius:2px }
 pre { box-sizing:border-box; margin:0 0 1.75em 0; width:100%; padding:5px 10px; font-family:courier,monospace; font-size:1.2rem; line-height:2rem; overflow:auto; background:#fff; border:1px solid #ededed; border-radius:2px }
 
-.icon { display: inline-block; width: 20px; height: 20px; fill: #000; text-align: center; color: #000; margin: 5px auto }
+.icon { display: inline-block; width: 32px; height: 32px; fill: #000; text-align: center; color: #000; margin: 5px auto }
 .animated { animation: fade-in-down .6s; animation-delay: .3s; animation-fill-mode: both }
 @keyframes fade-in-down { 0% { opacity: 0; transform: translateY(-20px) } 100% { opacity: 1; transform: translateY(0) } }
 .my-wrapper { height: 100%; width: 96%; margin: 0 auto; }
@@ -28,28 +25,16 @@ pre { box-sizing:border-box; margin:0 0 1.75em 0; width:100%; padding:5px 10px; 
 .my-header { display: block; margin: 0 auto; text-align: center; position: relative; z-index: 99; }
 .my-header>.link>.logo { margin-bottom: 25px; border-radius: 100%; transition: all .2s; opacity: 1; border:2px solid #FDFF00; }
 .my-header>.link>.logo:hover { box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.18), 0 0px 12px 0 rgba(0, 0, 0, 0.15); opacity: .8 }
-.my-header>.titolo { font-family: 'Oxanium',Helvetica,Arial,sans-serif; font-size: 3rem; margin: 0 0 13px; color: #e810f1 }
-.my-header>.descrizione { font-family: 'Oxanium',Helvetica,Arial,sans-serif; font-size: 1.5rem; color: #ddd; background:#666; background-color:rgba(66, 66, 66, 0.7); margin: 0 auto 30px; text-align: justify; padding:10px; border:2px solid #0CB81C; border-radius:5px; }
+.my-header>.titolo { font-size: 3rem; margin: 0 0 13px; color: #e810f1 }
+.my-header>.descrizione { font-size: 1.85rem; font-weight: 300; font-style: normal; color: #ddd; margin: 0 auto 30px; text-align: justify; background:#666; padding:10px; border:2px solid #0CB81C; border-radius:10px; }
 .my-header>.descrizione a { font-weight: 200 }
 .my-header>.descrizione b { color:khaki }
-.my-header>.descrizione i { color:#aaa }
-.my-social { margin-top: 20px }
-.my-social>.link { margin: 0; text-decoration: none; position: relative; display: inline-block; height: 35px; width: 35px }
-.my-social>.link:hover>.icon { fill: indigo }
-.my-social>.link:hover:before { opacity: 1; display: inline-block; transform: translate3d(0, 0, 0); white-space: nowrap }
-.my-social>.link:before { content: attr(data-title); display: none; position: absolute; bottom: -34px; left: -6px; margin: 0 auto; font-size: 13px; padding: 3px 10px; background: #222; color: #fff; border-radius: 2px; height: 22px; line-height: 22px; opacity: 0; transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear; transform: translate3d(0, -8px, 0); z-index: 99 }
-.my-social>.link:after { content: ""; position: absolute; top: 35px; left: 13px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 6px solid #222; opacity: 0; transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear; transform: translate3d(0, -8px, 0); z-index: 100 }
-.my-social>.link:hover:after { opacity: 1; transform: translate3d(0, 0, 0) }
-.my-social>.icon { transition: all ease-in-out .2s }
-.my-nav { margin-top: 30px; text-align: center }
-.my-nav>.list { list-style: none; margin: 0; padding: 0 }
-.my-nav>.list>.item { display: inline-block; vertical-align:middle; text-decoration: none; position: relative; }
-.my-nav>.list>.item>.cong { display: inline-block; font-weight: 300; font-size: 2.0rem; text-decoration: none; margin: 0; border-radius: 4%; transition: all .4s ease-in-out; color: #ddd;  }
-.my-nav>.list>.item>.link { display: inline-block; font-weight: 300; font-size: 2.2rem; padding: 7px 15px;	text-decoration: none; margin: 0; border-radius: 4%; transition: all .4s ease-in-out; }
-.my-nav>.list>.item>.link:hover { color: #e810f1 }
-.my-nav>.list>.item>.link>.icon { height: 35px; width: 35px }
-.my-nav>.list>.item>.link>.icon:hover { opacity: .8 }
-.my-nav2>.list>.item>.link:hover:before { opacity: 1; display: inline-block; transform: translate3d(0, 0, 0); white-space: nowrap }
-.my-nav2>.list>.item>.link:before { content: attr(data-title); display: none; position: absolute; bottom: 55px; left: -2px; margin: 0 auto; font-size: 12px; padding: 3px 10px; background: #666; color: #fff; border-radius: 2px; height: 22px; line-height: 22px; opacity: 0; transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear; transform: translate3d(0, 8px, 0); z-index: 99 }
-.my-nav2>.list>.item>.link:hover:after { opacity: 1; transform: translate3d(0, 0, 0) }
+.my-link { margin-top: 20px }
+.my-link>.link { margin: 0; text-decoration: none; position: relative; display: inline-block; height: 50px; width: 50px }
+.my-link>.link:hover>.icon { fill: indigo }
+.my-link>.link:hover:before { opacity: 1; display: inline-block; transform: translate3d(0, 0, 0); white-space: nowrap }
+.my-link>.link:before { content: attr(data-title); display: none; position: absolute; bottom: -34px; left: -6px; margin: 0 auto; font-size: 13px; padding: 3px 10px; background: #222; color: #fff; border-radius: 2px; height: 22px; line-height: 22px; opacity: 0; transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear; transform: translate3d(0, -8px, 0); z-index: 99 }
+.my-link>.link:after { content: ""; position: absolute; top: 50px; left: 16px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 6px solid #222; opacity: 0; transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear; transform: translate3d(0, -8px, 0); z-index: 100 }
+.my-link>.link:hover:after { opacity: 1; transform: translate3d(0, 0, 0) }
+.my-link>.icon { transition: all ease-in-out .2s }
 .my-footer { padding: 20px 0; margin: 20px 0 0; font-size: 1.3rem; color: #aaa; font-weight: 300; text-align: center; position: relative }
